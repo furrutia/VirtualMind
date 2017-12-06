@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta charset=utf-8 />
+    <title>Remove items from a dropdown list</title>
+</head>
+<body>
+    <form>
+
+
+        <div style="padding-left: 10px">
+            <h2>Función MultiplyBy</h2>
+            <input type="text" id="parametroA" size="1" />
+            <input type="text" id="parametroB" size="1" />
+            <input type="text" id="parametroC" size="1" />
+            <input type="button" value="Multiplicar" onclick="multiplicar();" />
+            <p id="resultadoMultiplicar" />
+        </div>
+
+        <div style="padding-left: 10px">
+            <h2>Función Longest_Country_Name (Separar paises por espacios)</h2>
+            <input type="text" id="txtPaises"/>
+            <input type="button" value="Obtener Pais Mas Largo" onclick="obtenerPaisMasLargo();" />
+            <p id="resultadoPaisMasLargo" />
+        </div>
+
+        <div style="padding-left: 10px">
+            <h2>Remover Items</h2>
+            <select id="colorSelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>White</option>
+                <option>Black</option>
+            </select>
+            <input type="button" onclick="removeColor()" value="Select and Remove">
+        </div>
+
+        <div style="padding-left: 10px; padding-top: 10px">
+            <h2>Agregar Filas</h2>
+            <table id="sampleTable" border="1">
+                <tr>
+                    <td>Row1 cell1</td>
+                    <td>Row1 cell2</td>
+                </tr>
+                <tr>
+                    <td>Row2 cell1</td>
+                    <td>Row2 cell2</td>
+                </tr>
+            </table><br>
+            <input type="button" onclick="insert_Row()" value="Insert row"> 
+        </div>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script src="Js/TestJS.js"></script>
+</body>
+</html>
