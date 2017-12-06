@@ -1,11 +1,8 @@
-USE GELTROS_FE
-GO
-
 BEGIN TRY
   
   BEGIN TRAN
   SET NOCOUNT ON
-  PRINT 'INICIO DE ACTUALIZACIÓN'
+  PRINT 'INICIO DE ACTUALIZACIÃ“N'
 
   IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'USUARIO' )
     Drop TABLE USUARIO
@@ -24,7 +21,7 @@ BEGIN TRY
   INSERT INTO dbo.Usuario (Nombre ,Apellido ,Email ,Password) VALUES ('Federico3' , 'Urrutia3' , 'fede.urrutia3@hotmail.com' , 'Password3')
   INSERT INTO dbo.Usuario (Nombre ,Apellido ,Email ,Password) VALUES ('Federico4' , 'Urrutia4' , 'fede.urrutia4@hotmail.com' , 'Password4')
   
-  PRINT 'FIN DE ACTUALIZACIÓN OK'
+  PRINT 'FIN DE ACTUALIZACIÃ“N OK'
   COMMIT
   SET NOCOUNT OFF
 
